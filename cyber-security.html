@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyber Security Roadmap</title>
+<meta name="description" content="An interactive cyber security roadmap: IT foundations, networking, systems, scripting, security fundamentals, cloud and the SOC, with job checkpoints and real pay data.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141b2b'/%3E%3Crect x='10' y='5' width='12' height='7' rx='2' fill='%23f4f2ec'/%3E%3Cpath d='M16 12v5M8 23v-6h16v6' fill='none' stroke='%23f4f2ec' stroke-width='2'/%3E%3Crect x='3' y='22' width='10' height='6' rx='2' fill='none' stroke='%23f4f2ec' stroke-width='2'/%3E%3Crect x='19' y='22' width='10' height='6' rx='2' fill='%23ff8a57'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try { var t = localStorage.getItem("cyber-roadmaps:theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<a class="skip" href="#roadmap">Skip to the roadmap</a>
+
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="10" y="3" width="12" height="8" rx="2" fill="currentColor"/><path d="M16 11v5M8 22v-6h16v6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="22" width="10" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="19" y="22" width="10" height="7" rx="2" style="fill: var(--accent)"/></svg>
+    cyber<span>/</span>roadmaps
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="cyber-security.html" aria-current="page">Cyber security</a>
+    <a href="penetration-testing.html">Pen testing</a>
+    <a href="jobs.html">Jobs and pay</a>
+    <a href="certifications.html">Certifications</a>
+  </nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<main id="main">
+  <div class="wrap rm-head">
+    <p class="kicker">Roadmap · 10 steps · 3 job checkpoints</p>
+    <h1>Cyber security</h1>
+    <p class="lede">The route most people take into security: learn how IT works, get a job near it, learn security on top, then specialise. Click any box for what it is, how it's used on the job and where to learn it.</p>
+
+    <div class="rm-bar">
+      <div class="progress">
+        <p class="progress-text" id="progress-text">0 done</p>
+        <div class="progress-track" id="progress-track" role="progressbar" aria-label="Topics done" aria-valuemin="0"><span class="progress-fill" id="progress-fill"></span></div>
+      </div>
+      <button type="button" class="button quiet" id="reset-progress">Reset progress</button>
+    </div>
+
+    <ul class="legend" aria-label="Key">
+      <li><span class="sw main"></span>Main step</li>
+      <li><span class="sw core"></span>Core</li>
+      <li><span class="sw useful"></span>Good to know</li>
+      <li><span class="sw later"></span>Later or optional</li>
+      <li><span class="sw link"></span>Another roadmap</li>
+      <li><span class="sw cp"></span>Job checkpoint</li>
+      <li><span class="sw done"></span>Done</li>
+      <li><span class="sw learning"></span>Learning</li>
+    </ul>
+  </div>
+
+  <div class="rm" id="roadmap">
+    <noscript><p>The interactive roadmap needs JavaScript. The <a href="jobs.html">jobs</a> and <a href="certifications.html">certifications</a> pages work without it.</p></noscript>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Only practise on systems you own or have written permission to test.</strong> Unauthorised access is a crime in Canada, the US and most other countries.</p>
+    <p>Pay, job market numbers and certification prices were last checked on 2 November 2026; sources are on the <a href="jobs.html#sources">jobs page</a>. Time estimates are rough guides, not promises.</p>
+    <p>Inspired by community roadmap sites. Not affiliated with any certification body, employer or other roadmap site.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="data/shared.js"></script>
+<script src="data/cyber-security.js"></script>
+<script src="roadmap.js"></script>
+</body>
+</html>

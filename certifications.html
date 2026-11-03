@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyber Security Certifications Compared</title>
+<meta name="description" content="Cyber security and penetration testing certifications compared: who runs each one, hands-on or multiple choice, approximate cost, what jobs it helps with, and a sensible order to take them.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141b2b'/%3E%3Crect x='10' y='5' width='12' height='7' rx='2' fill='%23f4f2ec'/%3E%3Cpath d='M16 12v5M8 23v-6h16v6' fill='none' stroke='%23f4f2ec' stroke-width='2'/%3E%3Crect x='3' y='22' width='10' height='6' rx='2' fill='none' stroke='%23f4f2ec' stroke-width='2'/%3E%3Crect x='19' y='22' width='10' height='6' rx='2' fill='%23ff8a57'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try { var t = localStorage.getItem("cyber-roadmaps:theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="10" y="3" width="12" height="8" rx="2" fill="currentColor"/><path d="M16 11v5M8 22v-6h16v6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="22" width="10" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="19" y="22" width="10" height="7" rx="2" style="fill: var(--accent)"/></svg>
+    cyber<span>/</span>roadmaps
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="cyber-security.html">Cyber security</a>
+    <a href="penetration-testing.html">Pen testing</a>
+    <a href="jobs.html">Jobs and pay</a>
+    <a href="certifications.html" aria-current="page">Certifications</a>
+  </nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<main id="main">
+  <section class="wrap hero">
+    <p class="kicker">25 certifications · prices checked November 2026</p>
+    <h1>Certifications, compared</h1>
+    <p class="lede">Certificates get your resume past filters; skills get you through the interview. Here's what each one proves, roughly what it costs, and when it's worth paying for.</p>
+  </section>
+
+  <section class="wrap section" aria-labelledby="ladder">
+    <div class="section-head"><h2 id="ladder">A common order for pen testing</h2></div>
+    <ol class="cert-ladder">
+      <li><b>Security+</b><p>One of the certs entry-level security ads name most. Multiple choice.</p></li>
+      <li><b>eJPT</b><p>A first hands-on pen test exam. Cheap and beginner friendly.</p></li>
+      <li><b>PNPT or CPTS</b><p>Realistic multi-day exams with a full written report.</p></li>
+      <li><b>OSCP+</b><p>The hands-on cert many pen test job ads ask for.</p></li>
+      <li><b>Specialise</b><p>OSWE or BSCP for web, OSEP or CRTO for red teaming.</p></li>
+    </ol>
+    <p class="rm-note">You don't need all of them. Many testers skip steps 2 or 3. For blue team jobs, swap steps 2–4 for CySA+, BTL1 or SC-200.</p>
+
+    <div class="honest">
+      <h3>Before you pay for anything</h3>
+      <ul>
+        <li>Search job ads in your own city and count which certs they name. That beats any list, including this one.</li>
+        <li>Hands-on exams (you hack or investigate a real lab) impress technical interviewers more than multiple-choice ones. HR filters and government jobs often want the multiple-choice ones by name.</li>
+        <li>Employers often pay for certs once you're hired. Ask before buying expensive ones yourself.</li>
+        <li>Prices change and sales are common. Figures below are approximate list prices in US dollars before tax.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="all">
+    <div class="section-head"><h2 id="all">All certifications</h2><p class="filter-count" id="cert-count" aria-live="polite"></p></div>
+
+    <div class="filters" id="cert-filters" hidden>
+      <fieldset>
+        <legend>Track</legend>
+        <button type="button" data-filter="track" data-value="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="track" data-value="foundations" aria-pressed="false">Foundations</button>
+        <button type="button" data-filter="track" data-value="blue" aria-pressed="false">Blue team</button>
+        <button type="button" data-filter="track" data-value="pentest" aria-pressed="false">Pen testing</button>
+        <button type="button" data-filter="track" data-value="cloud" aria-pressed="false">Cloud</button>
+        <button type="button" data-filter="track" data-value="grc" aria-pressed="false">GRC and management</button>
+      </fieldset>
+      <fieldset>
+        <legend>Level</legend>
+        <button type="button" data-filter="level" data-value="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="level" data-value="beginner" aria-pressed="false">Beginner</button>
+        <button type="button" data-filter="level" data-value="intermediate" aria-pressed="false">Intermediate</button>
+        <button type="button" data-filter="level" data-value="advanced" aria-pressed="false">Advanced</button>
+      </fieldset>
+    </div>
+
+    <div class="cert-grid">
+
+      <article class="cert" id="aplus" data-track="foundations" data-level="beginner">
+        <div class="cert-top"><div><h3>CompTIA A+</h3><p class="by">CompTIA</p></div><p class="cost">$274 × 2<small>two exams</small></p></div>
+        <div class="tags"><span>Foundations</span><span>Beginner</span><span class="mcq">Multiple choice + simulations</span></div>
+        <p><b>Good for:</b> your first help desk or desktop support job.</p>
+        <p class="muted">Valid three years, renewed with continuing education. Skip it if you already have IT experience.</p>
+        <a class="more" href="https://www.comptia.org/en-us/certifications/a/">Official page →</a>
+      </article>
+
+      <article class="cert" id="netplus" data-track="foundations" data-level="beginner">
+        <div class="cert-top"><div><h3>CompTIA Network+</h3><p class="by">CompTIA</p></div><p class="cost">$399</p></div>
+        <div class="tags"><span>Foundations</span><span>Beginner</span><span class="mcq">Multiple choice + simulations</span></div>
+        <p><b>Good for:</b> proving networking basics for IT and junior security roles.</p>
+        <p class="muted">Valid three years. Professor Messer's free videos cover the whole exam.</p>
+        <a class="more" href="https://www.comptia.org/en-us/certifications/network/">Official page →</a>
+      </article>
+
+      <article class="cert" id="ccna" data-track="foundations" data-level="intermediate">
+        <div class="cert-top"><div><h3>Cisco CCNA</h3><p class="by">Cisco</p></div><p class="cost">$300</p></div>
+        <div class="tags"><span>Foundations</span><span>Intermediate</span><span class="mcq">Multiple choice + simulations</span></div>
+        <p><b>Good for:</b> network administrator and network security roles.</p>
+        <p class="muted">Harder and deeper than Network+. Valid three years.</p>
+        <a class="more" href="https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html">Official page →</a>
+      </article>
+
+      <article class="cert" id="secplus" data-track="foundations" data-level="beginner">
+        <div class="cert-top"><div><h3>CompTIA Security+</h3><p class="by">CompTIA</p></div><p class="cost">$439</p></div>
+        <div class="tags"><span>Foundations</span><span>Beginner</span><span class="mcq">Multiple choice + simulations</span></div>
+        <p><b>Good for:</b> almost any first security job. One of the certs entry-level security ads name most, and it meets US Department of Defense requirements for many roles.</p>
+        <p class="muted">A new version (Security+ V8, exam SY0-801) is due on or around 17 November 2026, and the older SY0-701 retires some months after that. Check which version your study material covers. Valid three years.</p>
+        <a class="more" href="https://www.comptia.org/en-us/certifications/security/">Official page →</a>
+      </article>
+
+      <article class="cert" id="isc2cc" data-track="foundations" data-level="beginner">
+        <div class="cert-top"><div><h3>ISC2 Certified in Cybersecurity (CC)</h3><p class="by">ISC2</p></div><p class="cost">about $199<small>plus a yearly fee</small></p></div>
+        <div class="tags"><span>Foundations</span><span>Beginner</span><span class="mcq">Multiple choice</span></div>
+        <p><b>Good for:</b> a cheap first step to show interest.</p>
+        <p class="muted">Lighter than Security+ and less often named in job ads. ISC2's free exam program closed to new people in May 2026.</p>
+        <a class="more" href="https://www.isc2.org/certifications/cc">Official page →</a>
+      </article>
+
+      <article class="cert" id="googlecert" data-track="foundations" data-level="beginner">
+        <div class="cert-top"><div><h3>Google Cybersecurity Certificate</h3><p class="by">Google, on Coursera</p></div><p class="cost">Monthly fee<small>Coursera subscription</small></p></div>
+        <div class="tags"><span>Foundations</span><span>Beginner</span><span>Course, no proctored exam</span></div>
+        <p><b>Good for:</b> a structured introduction if you're starting from zero.</p>
+        <p class="muted">A course certificate, not an industry exam. Employers usually rate it below Security+, but it's a decent way to learn the basics.</p>
+        <a class="more" href="https://www.coursera.org/professional-certificates/google-cybersecurity">Official page →</a>
+      </article>
+
+      <article class="cert" id="cysa" data-track="blue" data-level="intermediate">
+        <div class="cert-top"><div><h3>CompTIA CySA+</h3><p class="by">CompTIA</p></div><p class="cost">$439</p></div>
+        <div class="tags"><span>Blue team</span><span>Intermediate</span><span class="mcq">Multiple choice + simulations</span></div>
+        <p><b>Good for:</b> SOC analyst and security analyst roles.</p>
+        <p class="muted">The natural next step after Security+ on the defensive side. Valid three years.</p>
+        <a class="more" href="https://www.comptia.org/en-us/certifications/cybersecurity-analyst/">Official page →</a>
+      </article>
+
+      <article class="cert" id="sc200" data-track="blue cloud" data-level="intermediate">
+        <div class="cert-top"><div><h3>Microsoft SC-200</h3><p class="by">Microsoft</p></div><p class="cost">$165<small>US price</small></p></div>
+        <div class="tags"><span>Blue team</span><span>Intermediate</span><span class="mcq">Multiple choice + case studies</span></div>
+        <p><b>Good for:</b> SOC jobs at companies that use Microsoft Sentinel and Defender, which is a lot of them.</p>
+        <p class="muted">Free learning path on Microsoft Learn. Renew free online every year.</p>
+        <a class="more" href="https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/">Official page →</a>
+      </article>
+
+      <article class="cert" id="btl1" data-track="blue" data-level="beginner">
+        <div class="cert-top"><div><h3>Blue Team Level 1 (BTL1)</h3><p class="by">Centri, formerly Security Blue Team</p></div><p class="cost">£399<small>about $540, training included</small></p></div>
+        <div class="tags"><span>Blue team</span><span>Beginner</span><span class="hands">Hands-on, 24 hours</span></div>
+        <p><b>Good for:</b> proving you can actually investigate an incident, for SOC roles.</p>
+        <p class="muted">A practical exam where you work an incident in a lab, with one free resit. Respected by SOC hiring managers.</p>
+        <a class="more" href="https://www.centri.org/certifications/blue-team-level-1">Official page →</a>
+      </article>
+
+      <article class="cert" id="gcih" data-track="blue" data-level="intermediate">
+        <div class="cert-top"><div><h3>GIAC GCIH</h3><p class="by">GIAC (linked to SANS)</p></div><p class="cost">$999<small>exam only; SANS training costs thousands more</small></p></div>
+        <div class="tags"><span>Blue team</span><span>Intermediate</span><span class="mcq">Multiple choice + hands-on questions</span></div>
+        <p><b>Good for:</b> incident response roles, especially in government and large companies.</p>
+        <p class="muted">Highly respected but expensive. Often paid for by employers. Renew every four years.</p>
+        <a class="more" href="https://www.giac.org/certifications/certified-incident-handler-gcih/">Official page →</a>
+      </article>
+
+      <article class="cert" id="ejpt" data-track="pentest" data-level="beginner">
+        <div class="cert-top"><div><h3>eJPT</h3><p class="by">INE Security</p></div><p class="cost">$249<small>exam voucher</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Beginner</span><span class="hands">Hands-on, 48 hours</span></div>
+        <p><b>Good for:</b> a first hands-on pen test exam that proves the basics.</p>
+        <p class="muted">Lab-based exam with questions about what you find; updated in March 2026. Includes a free retake.</p>
+        <a class="more" href="https://ine.com/security/certifications/ejpt-certification">Official page →</a>
+      </article>
+
+      <article class="cert" id="pnpt" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>PNPT</h3><p class="by">TCM Security</p></div><p class="cost">$499<small>training included</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="hands">Hands-on, 5 days + report</span></div>
+        <p><b>Good for:</b> showing you can run a whole engagement, including the report and a live debrief.</p>
+        <p class="muted">Five days to test, two to write a professional report, then a 15-minute debrief with their testers. Doesn't expire.</p>
+        <a class="more" href="https://certifications.tcm-sec.com/pnpt/">Official page →</a>
+      </article>
+
+      <article class="cert" id="cpts" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>HTB CPTS</h3><p class="by">Hack The Box</p></div><p class="cost">$550 / year<small>Academy Silver Annual, includes an exam voucher</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="hands">Hands-on, 10 days including the report</span></div>
+        <p><b>Good for:</b> deep, realistic practice; known as one of the most thorough intermediate exams.</p>
+        <p class="muted">Hack The Box raised Academy prices on 12 October 2026. Requires finishing the matching Academy path first.</p>
+        <a class="more" href="https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist">Official page →</a>
+      </article>
+
+      <article class="cert" id="pentestplus" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>CompTIA PenTest+</h3><p class="by">CompTIA</p></div><p class="cost">$439</p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="mcq">Multiple choice + simulations</span></div>
+        <p><b>Good for:</b> roles that need a US Department of Defense approved cert, or HR filters that name it.</p>
+        <p class="muted">Covers planning, scoping and reporting well, but technical interviewers usually value the hands-on exams more. Valid three years.</p>
+        <a class="more" href="https://www.comptia.org/en-us/certifications/pentest/">Official page →</a>
+      </article>
+
+      <article class="cert" id="oscp" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>OSCP+</h3><p class="by">OffSec (PEN-200 course)</p></div><p class="cost">$1,749<small>course, 90 days of labs, one attempt; or $2,749 a year</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="hands">Hands-on, 24 hours + report</span></div>
+        <p><b>Good for:</b> getting past filters for pen test jobs; widely asked for in job ads.</p>
+        <p class="muted">A long, timed practical exam followed by a written report. The "+" version must be renewed every three years.</p>
+        <a class="more" href="https://www.offsec.com/courses/pen-200/">Official page →</a>
+      </article>
+
+      <article class="cert" id="ceh" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>Certified Ethical Hacker (CEH)</h3><p class="by">EC-Council</p></div><p class="cost">$950–1,199<small>exam; $100 extra to apply without official training</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="mcq">Multiple choice, 125 questions</span></div>
+        <p><b>Good for:</b> some government and corporate HR requirements.</p>
+        <p class="muted">Well known to recruiters, but technical teams tend to value hands-on certs more. Self-study needs two years of security experience. Valid three years.</p>
+        <a class="more" href="https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/">Official page →</a>
+      </article>
+
+      <article class="cert" id="gpen" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>GIAC GPEN</h3><p class="by">GIAC (linked to SANS)</p></div><p class="cost">$999<small>exam only</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="mcq">Multiple choice + hands-on questions</span></div>
+        <p><b>Good for:</b> pen test roles in government and large companies, usually employer-funded.</p>
+        <p class="muted">Renew every four years ($499).</p>
+        <a class="more" href="https://www.giac.org/certifications/penetration-tester-gpen/">Official page →</a>
+      </article>
+
+      <article class="cert" id="bscp" data-track="pentest" data-level="intermediate">
+        <div class="cert-top"><div><h3>Burp Suite Certified Practitioner</h3><p class="by">PortSwigger</p></div><p class="cost">$99<small>per attempt, plus a Burp Suite Pro licence</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Intermediate</span><span class="hands">Hands-on web exam</span></div>
+        <p><b>Good for:</b> web application testing, AppSec and bug bounty.</p>
+        <p class="muted">Built on the free Web Security Academy labs. Cheap and well regarded for web testing.</p>
+        <a class="more" href="https://portswigger.net/web-security/certification">Official page →</a>
+      </article>
+
+      <article class="cert" id="oswe" data-track="pentest" data-level="advanced">
+        <div class="cert-top"><div><h3>OSWE</h3><p class="by">OffSec (WEB-300 course)</p></div><p class="cost">$2,749 / year<small>Learn One subscription</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Advanced</span><span class="hands">Hands-on, 48 hours</span></div>
+        <p><b>Good for:</b> senior web testers and application security engineers.</p>
+        <p class="muted">Focuses on finding flaws by reading application source code.</p>
+        <a class="more" href="https://www.offsec.com/courses/web-300/">Official page →</a>
+      </article>
+
+      <article class="cert" id="osep" data-track="pentest" data-level="advanced">
+        <div class="cert-top"><div><h3>OSEP</h3><p class="by">OffSec (PEN-300 course)</p></div><p class="cost">$2,749 / year<small>Learn One subscription</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Advanced</span><span class="hands">Hands-on, 48 hours</span></div>
+        <p><b>Good for:</b> experienced testers moving toward red team work.</p>
+        <p class="muted">Aimed at people who already hold OSCP-level skills.</p>
+        <a class="more" href="https://www.offsec.com/courses/pen-300/">Official page →</a>
+      </article>
+
+      <article class="cert" id="crto" data-track="pentest" data-level="advanced">
+        <div class="cert-top"><div><h3>Red Team Ops (CRTO)</h3><p class="by">Zero-Point Security</p></div><p class="cost">See site<small>course, labs and exam</small></p></div>
+        <div class="tags"><span>Pen testing</span><span>Advanced</span><span class="hands">Hands-on</span></div>
+        <p><b>Good for:</b> a first red team certification.</p>
+        <p class="muted">Lifetime course access and free exam retakes, according to the provider.</p>
+        <a class="more" href="https://www.zeropointsecurity.co.uk/course/red-team-ops">Official page →</a>
+      </article>
+
+      <article class="cert" id="awssec" data-track="cloud" data-level="advanced">
+        <div class="cert-top"><div><h3>AWS Certified Security – Specialty</h3><p class="by">Amazon Web Services</p></div><p class="cost">$300</p></div>
+        <div class="tags"><span>Cloud</span><span>Advanced</span><span class="mcq">Multiple choice</span></div>
+        <p><b>Good for:</b> cloud security engineers in AWS shops.</p>
+        <p class="muted">Best after some real AWS experience. Valid three years.</p>
+        <a class="more" href="https://aws.amazon.com/certification/certified-security-specialty/">Official page →</a>
+      </article>
+
+      <article class="cert" id="sc500" data-track="cloud" data-level="intermediate">
+        <div class="cert-top"><div><h3>Microsoft SC-500</h3><p class="by">Microsoft</p></div><p class="cost">$165<small>usual US price; check at booking</small></p></div>
+        <div class="tags"><span>Cloud</span><span>Intermediate</span><span class="mcq">Multiple choice + case studies</span></div>
+        <p><b>Good for:</b> securing Azure, hybrid and AI workloads; Azure is common in Canadian enterprises and government.</p>
+        <p class="muted">Leads to Microsoft Certified: Cloud and AI Security Engineer Associate. It replaced AZ-500, which retired on 31 August 2026.</p>
+        <a class="more" href="https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/">Official page →</a>
+      </article>
+
+      <article class="cert" id="cissp" data-track="grc" data-level="advanced">
+        <div class="cert-top"><div><h3>CISSP</h3><p class="by">ISC2</p></div><p class="cost">$749</p></div>
+        <div class="tags"><span>GRC and management</span><span>Advanced</span><span class="mcq">Adaptive multiple choice</span></div>
+        <p><b>Good for:</b> senior, architect and management roles. Very common in senior job ads.</p>
+        <p class="muted">Needs five years of paid security experience in at least two of its eight domains to certify (a relevant degree or an approved cert can count for one year). Not a beginner cert, whatever ads for boot camps say.</p>
+        <a class="more" href="https://www.isc2.org/certifications/cissp">Official page →</a>
+      </article>
+
+      <article class="cert" id="cisa" data-track="grc" data-level="advanced">
+        <div class="cert-top"><div><h3>CISA</h3><p class="by">ISACA</p></div><p class="cost">$575–760<small>member / non-member</small></p></div>
+        <div class="tags"><span>GRC and management</span><span>Advanced</span><span class="mcq">Multiple choice</span></div>
+        <p><b>Good for:</b> IT audit and compliance careers.</p>
+        <p class="muted">Needs five years of relevant experience to certify.</p>
+        <a class="more" href="https://www.isaca.org/credentialing/cisa">Official page →</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Only practise on systems you own or have written permission to test.</strong> Unauthorised access is a crime in Canada, the US and most other countries.</p>
+    <p>Certification prices are approximate US list prices before tax, last checked on 2 November 2026. They change often; always check the official page before buying.</p>
+    <p>Inspired by community roadmap sites. Not affiliated with any certification body, employer or other roadmap site.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
