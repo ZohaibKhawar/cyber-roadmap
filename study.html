@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certification Study Plans: Security+, PenTest+, eJPT, PNPT, CPTS and OSCP+</title>
+<meta name="description" content="Week-by-week study plans for six security certifications, built on the official exam objectives and legal practice labs, plus the path from junior to senior pen tester.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141b2b'/%3E%3Crect x='10' y='5' width='12' height='7' rx='2' fill='%23f4f2ec'/%3E%3Cpath d='M16 12v5M8 23v-6h16v6' fill='none' stroke='%23f4f2ec' stroke-width='2'/%3E%3Crect x='3' y='22' width='10' height='6' rx='2' fill='none' stroke='%23f4f2ec' stroke-width='2'/%3E%3Crect x='19' y='22' width='10' height='6' rx='2' fill='%23ff8a57'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try { var t = localStorage.getItem("cyber-roadmaps:theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="10" y="3" width="12" height="8" rx="2" fill="currentColor"/><path d="M16 11v5M8 22v-6h16v6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="22" width="10" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="19" y="22" width="10" height="7" rx="2" style="fill: var(--accent)"/></svg>
+    cyber<span>/</span>roadmaps
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="cyber-security.html">Cyber security</a>
+    <a href="penetration-testing.html">Pen testing</a>
+    <a href="jobs.html">Jobs and pay</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="study.html" aria-current="page">Study plans</a>
+    <a href="practice.html">Practice quiz</a>
+  </nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<main id="main">
+  <section class="wrap hero">
+    <p class="kicker">6 certifications · exam formats checked November 2026</p>
+    <h1>Study plans</h1>
+    <p class="lede">Week-by-week plans for the certifications pen testers take most, from Security+ to OSCP+. Each one is built on the exam's official objectives and on labs made for practice, and ends with the habits that help on exam day.</p>
+
+    <nav class="plan-jump" aria-label="Jump to a plan">
+      <a href="#plan-secplus">Security+</a>
+      <a href="#plan-pentestplus">PenTest+</a>
+      <a href="#plan-ejpt">eJPT</a>
+      <a href="#plan-pnpt">PNPT</a>
+      <a href="#plan-cpts">CPTS</a>
+      <a href="#plan-oscp">OSCP+</a>
+      <a href="#junior-to-senior">Junior to senior</a>
+    </nav>
+
+    <div class="honest">
+      <h3>Why there are no exam dumps here</h3>
+      <ul>
+        <li>“Dumps” are real exam questions copied out by earlier candidates. Every exam on this page makes you agree not to share or use its questions, and CompTIA, OffSec, INE, TCM and Hack The Box can cancel results and revoke certifications over it.</li>
+        <li>They don't work for hands-on exams anyway. eJPT, PNPT, CPTS and OSCP+ put you in a lab and grade what you do and what you write.</li>
+        <li>Interviewers test skills, not answers. Someone who memorised a dump is easy to spot in the first technical question.</li>
+        <li>What we offer instead: the <a href="practice.html">practice quiz</a>, with over a hundred original questions in exam style, each with the reasoning behind the answer.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="any-cert">
+    <div class="section-head"><h2 id="any-cert">How to study for any of them</h2></div>
+    <ol class="how">
+      <li><b>Start from the official objectives.</b> Download them, turn each line into a checklist item, and tick it off only when you could teach it to someone else.</li>
+      <li><b>Learn, then lab, then write.</b> Watch or read about a topic, practise it on a legal lab the same week, and write short notes in your own words.</li>
+      <li><b>Test yourself early.</b> Recalling an answer from memory teaches more than rereading. Use the practice quiz before you feel ready.</li>
+      <li><b>Rehearse the real thing.</b> For multiple-choice exams, sit timed practice tests. For hands-on exams, run a full mock: a set of practice machines, a fixed clock and a finished report.</li>
+    </ol>
+    <p class="rm-note">Hours and weeks below are our rough estimates for someone with IT basics studying about eight hours a week. Move faster or slower as you need; the order matters more than the pace.</p>
+  </section>
+
+  <section class="wrap section" aria-labelledby="plans">
+    <div class="section-head"><h2 id="plans">The plans</h2><a href="certifications.html">Compare prices and levels →</a></div>
+
+    <div class="plans">
+
+      <article class="plan" id="plan-secplus">
+        <header class="plan-head">
+          <div>
+            <p class="kicker">Foundations · multiple choice</p>
+            <h3>CompTIA Security+</h3>
+          </div>
+          <p class="plan-time">8 weeks<small>about 60–80 hours</small></p>
+        </header>
+        <dl class="plan-facts">
+          <div><dt>Questions</dt><dd>Up to 90, multiple choice and performance-based</dd></div>
+          <div><dt>Time</dt><dd>90 minutes</dd></div>
+          <div><dt>Pass mark</dt><dd>750 on a 100–900 scale</dd></div>
+          <div><dt>Versions</dt><dd>V8 (SY0-801) launches about 17 Nov 2026; V7 (SY0-701) retires in English on 11 Jun 2027</dd></div>
+        </dl>
+        <p><b>What it covers (V7):</b> general security concepts; threats, vulnerabilities and mitigations; security architecture; security operations, the largest domain; and security program management and oversight. Check which version your course teaches.</p>
+        <ol class="weeks">
+          <li><b>Week 1</b> Download the objectives and take the fundamentals quiz cold. Learn the basics: the CIA triad, control types, cryptography, certificates and authentication.</li>
+          <li><b>Weeks 2–3</b> Threats, vulnerabilities and mitigations: malware, social engineering, application and network weaknesses, and the controls that reduce each.</li>
+          <li><b>Week 4</b> Security architecture: network design, cloud and virtualisation, resilience, backups and recovery.</li>
+          <li><b>Weeks 5–6</b> Security operations: identity and access, monitoring and logging, vulnerability management and incident response.</li>
+          <li><b>Week 7</b> Program management: governance, risk, compliance, third-party risk, audits and security awareness.</li>
+          <li><b>Week 8</b> Timed practice tests. Review every wrong answer until you know why each other option was wrong too. Practise performance-based questions.</li>
+        </ol>
+        <div class="plan-cols">
+          <div>
+            <h4>Learn and practise with</h4>
+            <ul>
+              <li><a href="https://www.professormesser.com/">Professor Messer's free Security+ videos</a></li>
+              <li><a href="https://www.comptia.org/en-us/certifications/security/">Official objectives and CompTIA's own practice products</a></li>
+              <li><a href="https://tryhackme.com/">TryHackMe introductory rooms</a> to see the ideas working</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quiz sets for this exam</h4>
+            <ul class="chips">
+              <li><a href="practice.html#fundamentals">Security fundamentals</a></li>
+              <li><a href="practice.html#defence">Detection and defence</a></li>
+              <li><a href="practice.html#identity">Identity and networks</a></li>
+              <li><a href="practice.html#risk">Risk and CVSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="plan-tip"><b>On the day:</b> performance-based questions often come first and take longest. Flag them, answer the multiple choice, then come back.</p>
+      </article>
+
+      <article class="plan" id="plan-pentestplus">
+        <header class="plan-head">
+          <div>
+            <p class="kicker">Pen testing · multiple choice</p>
+            <h3>CompTIA PenTest+</h3>
+          </div>
+          <p class="plan-time">10 weeks<small>about 80–100 hours</small></p>
+        </header>
+        <dl class="plan-facts">
+          <div><dt>Questions</dt><dd>Up to 90, multiple choice and performance-based</dd></div>
+          <div><dt>Time</dt><dd>165 minutes</dd></div>
+          <div><dt>Pass mark</dt><dd>750 on a 100–900 scale</dd></div>
+          <div><dt>Exam</dt><dd>PT0-003</dd></div>
+        </dl>
+        <p><b>What it covers:</b> engagement management; reconnaissance and enumeration; vulnerability discovery and analysis; attacks and exploits; post-exploitation and lateral movement. Planning, scoping and reporting carry real weight, so don't treat them as an afterthought.</p>
+        <ol class="weeks">
+          <li><b>Weeks 1–2</b> Engagement management: scope, rules of engagement, law, methodologies, and how findings are reported and communicated.</li>
+          <li><b>Weeks 3–4</b> Reconnaissance and enumeration in a legal lab: public information, then discovering hosts and services and recording what you find.</li>
+          <li><b>Week 5</b> Vulnerability discovery and analysis: scanners, reading their output, and confirming findings by hand.</li>
+          <li><b>Weeks 6–8</b> The attack topics in the objectives, practised only on platforms built for it, such as TryHackMe's junior pen tester path and PortSwigger's free web labs.</li>
+          <li><b>Week 9</b> Post-exploitation and lateral movement concepts, and the cleanup and reporting expected at the end of a test.</li>
+          <li><b>Week 10</b> Timed practice tests, then the weakest domain again.</li>
+        </ol>
+        <div class="plan-cols">
+          <div>
+            <h4>Learn and practise with</h4>
+            <ul>
+              <li><a href="https://www.comptia.org/en-us/certifications/pentest/">Official objectives and CompTIA's own practice products</a></li>
+              <li><a href="https://tryhackme.com/">TryHackMe guided paths</a></li>
+              <li><a href="https://portswigger.net/web-security">PortSwigger Web Security Academy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quiz sets for this exam</h4>
+            <ul class="chips">
+              <li><a href="practice.html#ethics">Ethics, law and scope</a></li>
+              <li><a href="practice.html#engagements">Engagements and methodology</a></li>
+              <li><a href="practice.html#recon">Recon and enumeration</a></li>
+              <li><a href="practice.html#web">Web application security</a></li>
+              <li><a href="practice.html#reporting">Reporting</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="plan-tip"><b>On the day:</b> scenario questions often hinge on scope or the client's goal. Before choosing, ask which answer a careful tester with a signed scope would give.</p>
+      </article>
+
+      <article class="plan" id="plan-ejpt">
+        <header class="plan-head">
+          <div>
+            <p class="kicker">Pen testing · hands-on, beginner</p>
+            <h3>INE eJPT</h3>
+          </div>
+          <p class="plan-time">8 weeks<small>about 60–80 hours</small></p>
+        </header>
+        <dl class="plan-facts">
+          <div><dt>Format</dt><dd>Questions you answer by working in a live lab, open book</dd></div>
+          <div><dt>Time</dt><dd>48 hours</dd></div>
+          <div><dt>Questions</dt><dd>45 since INE's March 2026 update (35 before)</dd></div>
+          <div><dt>Valid</dt><dd>Three years; voucher expires 180 days after purchase</dd></div>
+        </dl>
+        <p><b>What it covers (INE's weights):</b> host and network penetration testing 35%; assessment methodologies 25%; host and network auditing 25%; web application penetration testing 15%.</p>
+        <ol class="weeks">
+          <li><b>Weeks 1–2</b> Refresh networking and Linux, and learn the phases of a test so you always know what you're doing and why.</li>
+          <li><b>Weeks 3–4</b> Information gathering and enumeration in labs, with one note per host.</li>
+          <li><b>Weeks 5–6</b> Host and network testing labs on INE's own course or TryHackMe's junior pen tester path.</li>
+          <li><b>Week 7</b> Web basics: HTTP, a proxy, and PortSwigger's apprentice-level labs.</li>
+          <li><b>Week 8</b> Three or four easy retired lab machines from start to finish, with notes good enough to answer questions from.</li>
+        </ol>
+        <div class="plan-cols">
+          <div>
+            <h4>Learn and practise with</h4>
+            <ul>
+              <li><a href="https://ine.com/security/certifications/ejpt-certification">INE's eJPT page and its matching course</a></li>
+              <li><a href="https://tryhackme.com/">TryHackMe guided paths</a></li>
+              <li><a href="https://portswigger.net/web-security">PortSwigger Web Security Academy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quiz sets for this exam</h4>
+            <ul class="chips">
+              <li><a href="practice.html#recon">Recon and enumeration</a></li>
+              <li><a href="practice.html#web">Web application security</a></li>
+              <li><a href="practice.html#engagements">Engagements and methodology</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="plan-tip"><b>On the day:</b> read every question before you start, because they tell you what to look for. Map the network first and keep notes as you go; 48 hours passes quickly.</p>
+      </article>
+
+      <article class="plan" id="plan-pnpt">
+        <header class="plan-head">
+          <div>
+            <p class="kicker">Pen testing · hands-on, report and debrief</p>
+            <h3>TCM Security PNPT</h3>
+          </div>
+          <p class="plan-time">12 weeks<small>about 100–140 hours</small></p>
+        </header>
+        <dl class="plan-facts">
+          <div><dt>Testing</dt><dd>5 days</dd></div>
+          <div><dt>Report</dt><dd>2 more days to write a professional report</dd></div>
+          <div><dt>Debrief</dt><dd>A live 15-minute debrief with TCM's testers</dd></div>
+          <div><dt>Feels like</dt><dd>A small real engagement: public research, the external side, then the internal network</dd></div>
+        </dl>
+        <p><b>What it covers:</b> open-source research, external testing, internal network and Active Directory testing, and presenting your results to a client.</p>
+        <ol class="weeks">
+          <li><b>Weeks 1–4</b> TCM's core ethical hacking course, with every lab done in your own environment, and a small home Windows domain built along the way.</li>
+          <li><b>Weeks 5–6</b> Open-source research and external testing courses. Practise turning what you find into scope-aware notes.</li>
+          <li><b>Weeks 7–9</b> Windows and Linux privilege escalation courses, and Active Directory practice on your lab and on practice platforms.</li>
+          <li><b>Week 10</b> Write a full report on a lab you finished, using a template, and time how long it takes.</li>
+          <li><b>Weeks 11–12</b> A mock engagement: several practice machines over a long weekend, then the report, then explain it out loud in 15 minutes.</li>
+        </ol>
+        <div class="plan-cols">
+          <div>
+            <h4>Learn and practise with</h4>
+            <ul>
+              <li><a href="https://certifications.tcm-sec.com/pnpt/">TCM's PNPT page and the courses it bundles</a></li>
+              <li><a href="https://academy.hackthebox.com/">Hack The Box Academy Active Directory modules</a></li>
+              <li><a href="https://github.com/juliocesarfort/public-pentesting-reports">Published pen test reports to compare with yours</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quiz sets for this exam</h4>
+            <ul class="chips">
+              <li><a href="practice.html#identity">Identity and networks</a></li>
+              <li><a href="practice.html#reporting">Reporting</a></li>
+              <li><a href="practice.html#risk">Risk and CVSS</a></li>
+              <li><a href="practice.html#ethics">Ethics, law and scope</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="plan-tip"><b>On the day:</b> treat it like a client job. Keep timestamped notes and screenshots from the first hour. For the debrief, lead with impact, then the path, then the fixes.</p>
+      </article>
+
+      <article class="plan" id="plan-cpts">
+        <header class="plan-head">
+          <div>
+            <p class="kicker">Pen testing · hands-on, report</p>
+            <h3>Hack The Box CPTS</h3>
+          </div>
+          <p class="plan-time">5–7 months<small>about 200–300 hours</small></p>
+        </header>
+        <dl class="plan-facts">
+          <div><dt>Before the exam</dt><dd>Finish the Academy's Penetration Tester job-role path (28 modules) to 100%</dd></div>
+          <div><dt>Exam</dt><dd>10 days in a realistic network, report included</dd></div>
+          <div><dt>Report</dt><dd>A commercial-grade report, uploaded within the 10 days</dd></div>
+          <div><dt>Attempts</dt><dd>Two per voucher; the certificate doesn't expire</dd></div>
+        </dl>
+        <p><b>What it covers:</b> the whole of an internal and external engagement, with a heavy focus on Active Directory, web applications, and the report.</p>
+        <ol class="weeks">
+          <li><b>Months 1–2</b> The path's first third: methodology, networking, information gathering and the core tools. Take notes per module in your own words.</li>
+          <li><b>Months 3–4</b> The web and Active Directory modules. These are the longest; don't rush the module skills assessments.</li>
+          <li><b>Month 5</b> The rest of the path, including documentation and reporting.</li>
+          <li><b>Months 6–7</b> Retired Hack The Box machines and a Pro Lab or similar network, then a mock report written to the same standard as the exam.</li>
+        </ol>
+        <div class="plan-cols">
+          <div>
+            <h4>Learn and practise with</h4>
+            <ul>
+              <li><a href="https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist">HTB's CPTS page</a></li>
+              <li><a href="https://academy.hackthebox.com/path/preview/penetration-tester">The Penetration Tester job-role path</a></li>
+              <li><a href="https://ippsec.rocks/">IppSec's index of walkthroughs</a> for retired machines (try first, then watch)</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quiz sets for this exam</h4>
+            <ul class="chips">
+              <li><a href="practice.html#identity">Identity and networks</a></li>
+              <li><a href="practice.html#web">Web application security</a></li>
+              <li><a href="practice.html#reporting">Reporting</a></li>
+              <li><a href="practice.html#risk">Risk and CVSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="plan-tip"><b>On the day:</b> ten days feels long but isn't. Start the report on day one and fill it in as you go, so the last days are for checking, not writing from scratch.</p>
+      </article>
+
+      <article class="plan" id="plan-oscp">
+        <header class="plan-head">
+          <div>
+            <p class="kicker">Pen testing · hands-on, proctored</p>
+            <h3>OffSec OSCP+</h3>
+          </div>
+          <p class="plan-time">4–6 months<small>about 250–350 hours</small></p>
+        </header>
+        <dl class="plan-facts">
+          <div><dt>Exam</dt><dd>23 hours 45 minutes, proctored</dd></div>
+          <div><dt>Machines</dt><dd>Three standalone machines (60 points) and an Active Directory set of three, starting from given credentials (40 points)</dd></div>
+          <div><dt>Pass mark</dt><dd>70 of 100 points</dd></div>
+          <div><dt>Report and validity</dt><dd>Report due 24 hours after the exam; OSCP+ is valid three years</dd></div>
+        </dl>
+        <p><b>What it covers:</b> the PEN-200 course: methodology, enumeration, web and network attacks, privilege escalation on Linux and Windows, Active Directory, and professional reporting. Points only count if the report proves them.</p>
+        <ol class="weeks">
+          <li><b>Month 1</b> Work through PEN-200 in order, doing the exercises rather than just reading.</li>
+          <li><b>Months 2–3</b> The course's challenge labs. Keep a personal checklist of what to look for at each stage and improve it after every machine.</li>
+          <li><b>Month 4</b> Extra practice on OffSec Proving Grounds and retired Hack The Box machines, including Active Directory sets.</li>
+          <li><b>Months 5–6</b> At least one full mock: a set of unseen practice machines, a 24-hour clock, sleep and breaks planned, and a finished report the next day.</li>
+        </ol>
+        <div class="plan-cols">
+          <div>
+            <h4>Learn and practise with</h4>
+            <ul>
+              <li><a href="https://www.offsec.com/courses/pen-200/">OffSec PEN-200</a></li>
+              <li><a href="https://www.offsec.com/blog/oscp-exam-guide/">OffSec's OSCP exam guide</a></li>
+              <li><a href="https://www.offsec.com/products/proving-grounds/">OffSec Proving Grounds practice labs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quiz sets for this exam</h4>
+            <ul class="chips">
+              <li><a href="practice.html#identity">Identity and networks</a></li>
+              <li><a href="practice.html#recon">Recon and enumeration</a></li>
+              <li><a href="practice.html#web">Web application security</a></li>
+              <li><a href="practice.html#reporting">Reporting</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="plan-tip"><b>On the day:</b> plan your breaks and sleep before you start. If you're stuck for an hour, move to another machine. Screenshot every step that earns points.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="junior-to-senior">
+    <div class="section-head"><h2 id="junior-to-senior">From first tester job to senior</h2><a href="penetration-testing.html#senior">The senior step on the roadmap →</a></div>
+    <p class="lede">Certificates get you the first job. After that, what makes you senior is experience on real engagements and the judgement that comes with it.</p>
+    <ol class="ladder">
+      <li><span class="yrs">Year 0–1 in the job</span><b>Junior tester</b><p>Learn your firm's methodology and report style, shadow leads, write findings that pass review, and finish a hands-on cert if you haven't.</p></li>
+      <li><span class="yrs">Years 1–3</span><b>Tester</b><p>Run tests on your own, pick a specialty (web, cloud, Active Directory, mobile), and build templates or tools your team uses.</p></li>
+      <li><span class="yrs">Years 3–5</span><b>Senior tester</b><p>Lead engagements, scope work, review reports, present to executives, and take an advanced cert such as OSEP, OSWE, CRTO or BSCP.</p></li>
+      <li><span class="yrs">Years 5+</span><b>Lead or principal</b><p>Run a team, own client relationships, lead red team or threat-led work, and publish research or speak at meetups.</p></li>
+    </ol>
+    <p class="rm-note">Typical ranges, not rules. Practise the judgement side with the <a href="practice.html#senior">senior scenarios</a> in the practice quiz.</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Only practise on systems you own or have written permission to test.</strong> Unauthorised access is a crime in Canada, the US and most other countries.</p>
+    <p>Exam formats were checked on the certification bodies' own pages on 4 November 2026. They change, so confirm on the official page before you book. Hours and weeks are our estimates, not official figures.</p>
+    <p>Not affiliated with CompTIA, INE, TCM Security, Hack The Box, OffSec or any other certification body.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

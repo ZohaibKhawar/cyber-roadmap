@@ -73,6 +73,13 @@ window.LINKS = {
   bugcrowd: ["Bugcrowd bug bounty programs", "https://www.bugcrowd.com/", "free"],
   obsidian: ["Obsidian (note-taking app)", "https://obsidian.md/", "free"],
   cyberseek: ["CyberSeek career pathway", "https://www.cyberseek.org/pathway.html", "free"],
+  mseval: ["Microsoft Evaluation Center: free trial copies of Windows Server", "https://www.microsoft.com/en-us/evalcenter", "free"],
+  d3fend: ["MITRE D3FEND: defensive techniques mapped to attacks", "https://d3fend.mitre.org/", "free"],
+  ptes: ["Penetration Testing Execution Standard (PTES)", "https://pentest-standard.readthedocs.io/en/latest/", "free"],
+  pcidss: ["PCI Security Standards Council: PCI DSS", "https://www.pcisecuritystandards.org/standards/pci-dss/", "free"],
+  tiber: ["European Central Bank: TIBER-EU threat-led testing", "https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html", "free"],
+  crest: ["CREST: accreditation for testing companies and testers", "https://www.crest-approved.org/", "mixed"],
+  cvd: ["CERT Guide to Coordinated Vulnerability Disclosure", "https://certcc.github.io/CERT-Guide-to-CVD/", "free"],
 };
 
 /* Jobs shown at the job checkpoints. Pay figures and sources are explained on jobs.html. */
@@ -83,6 +90,8 @@ window.JOBS = {
   grc: { t: "GRC or risk and compliance analyst", anchor: "grc-analyst", pay: "Counted with information security analysts (BLS)", note: "A real door in for people who write well and like policy, audits and process." },
   juniorpentest: { t: "Junior penetration tester / security consultant", anchor: "pen-tester", pay: "O*NET median $116,580 for the wider group pen testers are counted in (2025)", note: "Usually hired from people with IT, SOC or developer experience plus a hands-on cert." },
   appsec: { t: "Application security engineer", anchor: "appsec", pay: "Counted with information security analysts or software developers (BLS)", note: "A common move for developers and web testers." },
+  seniorpentest: { t: "Senior or lead penetration tester", anchor: "senior-pen-tester", pay: "No official pay data by level. The O*NET median for the wider group is $116,580 (2025), and senior roles usually sit above the median", note: "Usually several years of client testing, plus engagements you've led and reports you've reviewed." },
+  redteam: { t: "Red team operator", anchor: "red-team", pay: "No separate official data", note: "A small number of roles, mostly at large companies and consultancies. Usually several years of pen testing first." },
   bounty: { t: "Bug bounty (part time)", anchor: "bug-bounty", pay: "Paid per valid finding; most people earn little or nothing at first", note: "Only test programs that invite it, and only inside their published scope." },
 };
 

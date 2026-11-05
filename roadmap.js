@@ -324,6 +324,12 @@
       parts.push(box);
     }
 
+    if (item.senior) {
+      const box = el("div", "on-job senior-note");
+      box.append(el("strong", "", "At senior level"), el("p", "", item.senior));
+      parts.push(box);
+    }
+
     if (item.learn) parts.push(heading("What to learn"), bulletList(item.learn));
 
     if (kind === "main") {
