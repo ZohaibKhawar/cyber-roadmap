@@ -355,6 +355,10 @@
       }
     }
 
+    const lesson = window.LESSONS && window.LESSONS[item.id];
+    drawer.classList.toggle("wide", Boolean(lesson && window.renderLesson));
+    if (lesson && window.renderLesson) parts.push(window.renderLesson(lesson));
+
     if (item.practice) parts.push(heading("Practise"), el("p", "", item.practice));
 
     if (item.jobs) {

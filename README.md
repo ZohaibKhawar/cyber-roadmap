@@ -5,6 +5,7 @@ Free, interactive roadmaps for getting into cyber security and penetration testi
 - **Cyber security roadmap:** IT foundations, networking, systems, scripting, security fundamentals, cloud and the SOC, then a specialty
 - **Penetration testing roadmap:** ethics and scope, a legal practice lab, recon, scanning, web and internal testing, reporting, specialising, getting hired, and growing into a senior tester, with a note on what seniors know at every step
 - Click any topic for what it is, how it's used on the job, what to learn and free resources
+- Every topic on the cyber security roadmap has a deep dive: 64 lessons with 49 diagrams (OSI layers, subnet bits, DNS, Kerberos, the TLS handshake, ransomware stages, the SOC alert flow, ATT&CK tactics and more), worked examples, real log and code samples, and questions to check yourself
 - Job checkpoints show which jobs you could apply for at each point, with official pay data
 - Jobs and pay page with US (BLS, O*NET) and Canadian (Job Bank) figures, and every source linked
 - 25 certifications compared by cost, format and level, with filters
@@ -27,6 +28,7 @@ Then open http://localhost:5320.
 - `data/cyber-security.js` and `data/penetration-testing.js` hold each roadmap's steps and topics
 - `data/shared.js` holds the resource links, the jobs shown at checkpoints and the certification names
 - `roadmap.js` draws the chart, the side panel and the progress bar
+- `data/lessons/*.js` hold the deep-dive lessons, one file per roadmap step, with their diagrams; `lesson.js` turns them into the "Deep dive" part of the side panel and draws the diagrams as SVG that follows the light and dark theme
 - `data/quiz.js` holds the practice questions and `quiz.js` runs the quiz
 - `jobs.html`, `certifications.html` and `study.html` are plain HTML
 
